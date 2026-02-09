@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* =========================
+   Theme (Tailwind v4.1+)
+========================= */
+@font-face {
+  font-family: ibm;
+  src: url(./assets/font/IBM_Plex_Sans_Thai/IBMPlexSansThai-Medium.ttf);
+}
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-ibm: ibm;
+  --animate-wiggle: wiggle 2s ease-in-out infinite;
+  --animate-slowOpen: slowOpen 1s ease-in-out;
+  --animate-slowClose: slowClose 2s ease-in-out;
+  --animate-fade: fade .5s ease-in-out;
+  --animate-slid-down: slidDown 0.5s ease-in-out infinite;
+  --gray-50: #E9E9E9;
+  --color-blue-1: rgba(0, 24, 104, 1);
+  --color-blue-2: rgba(0, 24, 104, 1);
+  --shadow-1: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+  --shadow-2: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+/* =========================
+   Base styles
+========================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  @apply bg-gray-900 font-ibm
+}
+
+/* =========================
+   Animations
+========================= */
+
+@keyframes slidDown {
+  from {
+    top: 2rem;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes fade {
+  from {
+    /* transform: translateY(5rem); */
+    opacity: 0;
+  }
+
+  to {
+    /* transform: translateY(0); */
+    opacity: 1;
+  }
+}
+
+@keyframes slowClose {
+  from {
+    width: fit-content;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes slowOpen {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(20deg);
+  }
+
+  60% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

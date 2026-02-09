@@ -1,0 +1,47 @@
+{
+    "nav": {
+        "menu": {
+            "booking": "Booking Now",
+            "howToBooking": "How Booking?",
+            "review": "Review",
+            "contact": "Contact",
+            "FAQ": "FAQ"
+        }
+    },
+    "filterCar": {
+        "btn-brand": "Brand",
+        "btn-pickup-date": "Pickup",
+        "btn-pickup-return": "Return",
+        "btn-pickup-date-return": "Pickup/Return",
+        "search": "Search"
+    },
+    "popular": "Popular Model",
+    "calendar": {
+        "title": "Calendar Booking",
+        "btn-to-day": "To Day",
+        "day": {
+            "1": "S",
+            "2": "M",
+            "3": "T",
+            "4": "W",
+            "5": "Th",
+            "6": "F",
+            "7": "St"
+        },
+        "mount": {
+            "1": "January",
+            "2": "February",
+            "3": "March",
+            "4": "April",
+            "5": "May",
+            "6": "June",
+            "7": "July",
+            "8": "August",
+            "9": "September",
+            "10": "October",
+            "11": "November",
+            "12": "December"
+        }
+    },
+    "moreDetail": "Click, for more detail."
+}
